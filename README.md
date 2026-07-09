@@ -86,7 +86,7 @@ Cyclical time encoding, multi-window rolling stats, price momentum, SNAP/event f
 
 ## 🏗️ System Architecture
 
-<img src="docs/images/architecture.png" alt="System Architecture" width="100%">
+<img src="docs/images/chart_architecture.png" alt="System Architecture" width="100%">
 
 The platform follows a **modular pipeline architecture** with 9 independent modules connected through shared data artifacts (Parquet files, pickle models, vector indices):
 
@@ -159,7 +159,7 @@ M5 Kaggle Dataset
 
 ## 📊 Data Pipeline
 
-<img src="docs/images/data_pipeline.png" alt="Data Pipeline" width="100%">
+<img src="docs/images/chart_data_pipeline.png" alt="Data Pipeline" width="100%">
 
 ### Module 1: ETL (Extract → Transform → Load)
 
@@ -182,7 +182,7 @@ Raw M5 Kaggle data goes through a rigorous cleaning pipeline:
 
 ## 🧠 Feature Engineering
 
-<img src="docs/images/feature_groups.png" alt="Feature Groups" width="100%">
+<img src="docs/images/chart_feature_groups.png" alt="Feature Groups" width="100%">
 
 80 engineered features across **5 groups**, designed to capture every demand signal:
 
@@ -203,7 +203,7 @@ Raw M5 Kaggle data goes through a rigorous cleaning pipeline:
 
 ## 🎯 Model Performance
 
-<img src="docs/images/model_comparison.png" alt="Model Comparison" width="100%">
+<img src="docs/images/chart_model_comparison.png" alt="Model Comparison" width="100%">
 
 ### Metrics Summary
 
@@ -239,7 +239,7 @@ This mimics real-world deployment where the model predicts the future using only
 
 ## 🔍 Explainability (SHAP)
 
-<img src="docs/images/shap_waterfall.png" alt="SHAP Waterfall" width="48%"> <img src="docs/images/feature_importance.png" alt="Feature Importance" width="48%">
+<img src="docs/images/chart_shap_waterfall.png" alt="SHAP Waterfall" width="48%"> <img src="docs/images/feature_importance.png" alt="Feature Importance" width="48%">
 
 ### How It Works
 Every prediction comes with a **SHAP explanation** showing which features pushed the forecast up or down:
@@ -259,7 +259,7 @@ Every prediction comes with a **SHAP explanation** showing which features pushed
 
 ## 🤖 RAG AI Copilot
 
-<img src="docs/images/rag_pipeline.png" alt="RAG Pipeline" width="100%">
+<img src="docs/images/chart_rag_pipeline.png" alt="RAG Pipeline" width="100%">
 
 ### Architecture
 
@@ -320,7 +320,7 @@ User Question
 
 ## 📦 Inventory Intelligence
 
-<img src="docs/images/inventory_flow.png" alt="Inventory Flow" width="100%">
+<img src="docs/images/chart_inventory_flow.png" alt="Inventory Flow" width="100%">
 
 ### Formulas Used
 
@@ -351,7 +351,7 @@ User Question
 
 ## 🖥️ Dashboard
 
-<img src="docs/images/dashboard_screenshot.png" alt="Dashboard Screenshot" width="100%">
+<img src="images/Dashboard-overview.png" alt="Dashboard Screenshot" width="100%">
 
 Built with **Next.js 16 + React 19 + shadcn/ui + Tailwind CSS 4 + Recharts + TanStack Query**.
 
