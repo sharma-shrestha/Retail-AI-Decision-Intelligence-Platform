@@ -102,12 +102,12 @@ M5 Kaggle Dataset
 ┌──────────────────────┐
 │  Module 2: Features  │  80 features · 5 groups · Lags · Rolling stats · Price · Interactions
 └──────┬───────────────┘
-       │ 
+       │  engineered_features.parquet (411K × 80 cols)
        ▼
 ┌──────────────────────┐
 │  Module 3: Training  │  LightGBM · XGBoost · CatBoost · Tweedie loss · Early stopping
 └──────┬───────────────┘
-       │   _meta.json
+       │  saved .pkl models + _meta.json
        ├──────────────────────────────────┐
        ▼                                  ▼
 ┌──────────────────┐            ┌──────────────────┐
@@ -551,10 +551,10 @@ retail-ai-platform/
 │   │   │   └── main.py                     # Module 8: FastAPI (10 endpoints)
 │   │   └── 📂 utils/
 │   │       └── config.py                   # Central configuration
-│   ├── 📂 models/saved/                    # Trained  (gitignored)
-│   │   ├── catboost_meta.json
-│   │   ├──  lightgbm_meta.json
-│   │   └── xgboost_meta.json
+│   ├── 📂 models/saved/                    # Trained .pkl models (gitignored)
+│   │   ├── catboost.pkl + catboost_meta.json
+│   │   ├── lightgbm.pkl + lightgbm_meta.json
+│   │   └── xgboost.pkl + xgboost_meta.json
 │   ├── 📂 scripts/
 │   │   ├── run_pipeline.py                 # End-to-end runner
 │   │   ├── catboost_notebook.py            # CatBoost experiment
