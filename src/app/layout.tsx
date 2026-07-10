@@ -18,14 +18,14 @@ export const metadata: Metadata = {
   title: "Retail AI Decision Intelligence Platform",
   description: "AI-powered demand forecasting, SHAP explainability, inventory intelligence, and RAG-based copilot using M5 retail data.",
   keywords: ["retail", "AI", "forecasting", "SHAP", "inventory", "M5", "LightGBM", "CatBoost"],
-  authors: [{ name: "Retail AI Platform" }],
+  authors: [{ name: "Shrestha Sharma" }],
   icons: {
     icon: "/logo.jpg",
   },
   openGraph: {
     title: "Retail AI Decision Intelligence Platform",
     description: "AI-powered demand forecasting, SHAP explainability, and inventory intelligence",
-    siteName: "Retail AI Platform",
+    siteName: "Retail AI Decision Intelligence Platform",
     type: "website",
   },
 };

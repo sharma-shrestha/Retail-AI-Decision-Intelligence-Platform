@@ -106,3 +106,17 @@ vector_store/
 # images/
 # public/
 # src/
+
+# ==============================
+# Generated ML Artifacts
+# ==============================
+
+# Trained models
+retail-ai-platform/models/saved/*.pkl
+
+# Processed datasets
+retail-ai-platform/data/processed/*.parquet
+
+# Generated knowledge base
+retail-ai-platform/data/processed/knowledge_base/*
+!retail-ai-platform/data/processed/knowledge_base/.gitkeep

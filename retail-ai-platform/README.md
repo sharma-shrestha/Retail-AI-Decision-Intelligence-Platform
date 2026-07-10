@@ -1,7 +1,7 @@
 # Retail AI Decision Intelligence Platform
 
 ## Overview
-A next-generation retail intelligence system combining Machine Learning, Explainable AI, RAG-based GenAI, and Business Analytics to forecast demand, explain predictions, answer business questions, and recommend inventory actions.
+A Retail demand forecasting and decision intelligence platform combining Machine Learning, Explainable AI, RAG-based GenAI, and Business Analytics to forecast demand, explain predictions, answer business questions, and recommend inventory actions.
 
 ## Architecture (Phase 1 + Phase 2 — Implemented)
 
@@ -43,7 +43,7 @@ Module 5: Inventory Intelligence
   - Natural language reasoning
     │
     ▼
-Module 6: GenAI Layer — RAG AI Copilot ⭐
+Module 6: GenAI Layer — RAG AI Copilot 
   - Knowledge Base: 2,199 documents (TF-IDF vector index)
     - 990 product catalog entries
     - 990 forecast summaries
@@ -134,7 +134,8 @@ curl http://localhost:8000/api/v1/ask-ai/underperforming?n=10
 
 ## Gemini Integration (Optional)
 
-The platform works out-of-the-box with the built-in NLG engine. To upgrade to Gemini:
+Local rule-based NLG engine
+Gemini API (optional,fallback)
 
 ```bash
 # 1. Copy the env template
@@ -149,7 +150,7 @@ source .env
 python -m uvicorn src.api.main:app --host 0.0.0.0 --port 8000
 ```
 
-The system auto-detects `GEMINI_API_KEY` and switches to Gemini for response generation. No code changes needed.
+If `GEMINI_API_KEY` is configured, the application uses Gemini for response generation, otherwise, it falls back to the local NLG engine.
 
 ## Tech Stack
 - **Data**: Pandas, NumPy, PyArrow
